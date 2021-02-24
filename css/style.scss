@@ -1,0 +1,21 @@
+:root {
+  --color: transparent;
+  --blend-mode: hard-light;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.img-container {
+  display: inline-block;
+  height: 600px;
+  width: 800px;
+  background-color: var(--color);
+  background-blend-mode: var(--blend-mode);
+}

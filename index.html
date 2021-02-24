@@ -5,13 +5,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Adam Mann">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Background Blender</title>
 </head>
 
 <body>
-  <img src="" id="image" alt="Random Image">
+  <div class="img-container">
+
+  </div>
   <div>
-    <button id="new-pic">New Picture</button>
+    <button id="new-BW-pic">New B&W Picture</button>
+  </div>
+  <div>
+    <button id="new-color-pic">New Color Picture</button>
+  </div>
+  <div>
+    <input type="color" id="colorpicker" value="#ff0000" style="width:50%;">
+  </div>
+  <div>
+    <label for="blend-mode">Choose your blend mode</label>
+    <select name="blend-mode" id="blend-mode">
+      <option value="hard-light">Hard-light</option>
+      <option value="soft-light">Soft-light</option>
+      <option value="multiply">Multiply</option>
+      <option value="screen">Screen</option>
+      <option value="overlay">Overlay</option>
+      <option value="darken">Darken</option>
+      <option value="lighten">Lighten</option>
+      <option value="color-dodge">Color-dodge</option>
+      <option value="color-burn">Color-burn</option>
+      <option value="difference">Difference</option>
+      <option value="exclusion">Exclusion</option>
+      <option value="hue">Hue</option>
+      <option value="saturation">Saturation</option>
+      <option value="color">Color</option>
+      <option value="luminosity">Luminosity</option>
+      <option value="normal">Normal (none)</option>
+    </select>
   </div>
   <script src='./js/main.js'></script>
 </body>
