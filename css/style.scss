@@ -19,3 +19,10 @@ html {
   background-color: var(--color);
   background-blend-mode: var(--blend-mode);
 }
+
+#spinner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
