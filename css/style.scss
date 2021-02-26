@@ -26,10 +26,6 @@ html {
 
 body {
   min-height: 100vh;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
 }
 
 h1 {
@@ -38,12 +34,13 @@ h1 {
   font-size: 5rem;
 }
 
-div {
-  // REMOVE THIS
-  display: none;
-}
-
 // Main styles //
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .header {
   display: flex;
@@ -63,16 +60,37 @@ div {
   }
 }
 
-.img-container {
-  // display: block;
-  display: none;
-  height: 1000px;
-  width: 1000px;
-  background-color: var(--color);
-  background-blend-mode: var(--blend-mode);
-  background-size: cover;
-  background-repeat: no-repeat;
+.img {
+  margin: 3rem 3rem 0 -3rem;
+  display: block;
+  width: 800px;
+  height: 800px;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+    background-blend-mode: var(--blend-mode);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
+
+.selectors {
+  display: flex;
+  flex-direction: column;
+}
+
+// .img-container {
+//   // display: block;
+//   display: none;
+//   height: 1000px;
+//   width: 1000px;
+//   background-color: var(--color);
+//   background-blend-mode: var(--blend-mode);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
 
 #spinner {
   display: none;

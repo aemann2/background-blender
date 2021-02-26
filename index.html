@@ -15,39 +15,38 @@
     <img src="./images/blender.svg" alt="" class="header__img">
     <h1 class="header__heading">Background Blender</h1>
   </header>
-  <div class="img-container">
-    <img id="spinner" src="" alt="">
-  </div>
-  <div>
-    <button id="new-BW-pic">New B&W Picture</button>
-  </div>
-  <div>
-    <button id="new-color-pic">New Color Picture</button>
-  </div>
-  <div>
-    <input type="color" id="colorpicker" value="#ff0000" style="width:200px">
-  </div>
-  <div>
-    <label for="blend-mode">Choose your blend mode</label>
-    <select name="blend-mode" id="blend-mode">
-      <option value="hard-light">Hard-light</option>
-      <option value="soft-light">Soft-light</option>
-      <option value="multiply">Multiply</option>
-      <option value="screen">Screen</option>
-      <option value="overlay">Overlay</option>
-      <option value="darken">Darken</option>
-      <option value="lighten">Lighten</option>
-      <option value="color-dodge">Color-dodge</option>
-      <option value="color-burn">Color-burn</option>
-      <option value="difference">Difference</option>
-      <option value="exclusion">Exclusion</option>
-      <option value="hue">Hue</option>
-      <option value="saturation">Saturation</option>
-      <option value="color">Color</option>
-      <option value="luminosity">Luminosity</option>
-      <option value="normal">Normal (none)</option>
-    </select>
-  </div>
+  <main class="main">
+    <div class="img">
+      <div class="img__container"></div>
+      <img class="img__spinner" src="" alt="">
+    </div>
+    <div class="selectors">
+      <button class="selectors__new-pic" id="new-BW-pic">New Picture</button>
+      <input type="color" class="selectors__picker" id="colorpicker" value="#ff0000" style="width:200px">
+      <div class="selectors__blend-mode">
+        <label for="blend-mode">Choose your blend mode</label>
+        <select name="blend-mode" id="blend-mode">
+          <option value="hard-light">Hard-light</option>
+          <option value="soft-light">Soft-light</option>
+          <option value="multiply">Multiply</option>
+          <option value="screen">Screen</option>
+          <option value="overlay">Overlay</option>
+          <option value="darken">Darken</option>
+          <option value="lighten">Lighten</option>
+          <option value="color-dodge">Color-dodge</option>
+          <option value="color-burn">Color-burn</option>
+          <option value="difference">Difference</option>
+          <option value="exclusion">Exclusion</option>
+          <option value="hue">Hue</option>
+          <option value="saturation">Saturation</option>
+          <option value="color">Color</option>
+          <option value="luminosity">Luminosity</option>
+          <option value="normal">Normal (none)</option>
+        </select>
+      </div>
+    </div>
+  </main>
+
   <script src='./js/main.js'></script>
 </body>
 
