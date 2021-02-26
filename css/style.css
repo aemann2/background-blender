@@ -43,6 +43,14 @@ div {
 .header__heading {
   width: 5em;
   line-height: 1em;
+  margin-left: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header__img {
+  width: 140px;
 }
 
 .img-container {

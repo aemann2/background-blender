@@ -7,12 +7,12 @@ $main-font-color: #061940;
 $header-font-color: white;
 $btn-bg: #ffcc17;
 
-// Globals //
-
 :root {
   --color: transparent;
   --blend-mode: hard-light;
 }
+
+// Globals //
 
 html {
   box-sizing: border-box;
@@ -54,6 +54,12 @@ div {
   &__heading {
     width: 5em;
     line-height: 1em;
+    margin-left: 1rem;
+    align-self: center;
+  }
+
+  &__img {
+    width: 140px;
   }
 }
 
