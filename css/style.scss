@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+// Variables //
+
+$header-bg: #00308d;
+$main-font-color: #061940;
+$header-font-color: white;
+$btn-bg: #ffcc17;
+
 :root {
   --color: transparent;
   --blend-mode: hard-light;
 }
 
+// Globals //
+
 html {
   box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-size: 16px;
 }
 
 * {
@@ -20,8 +24,48 @@ body {
   padding: 0;
 }
 
+body {
+  min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: $header-font-color;
+  font-size: 5rem;
+}
+
+div {
+  // REMOVE THIS
+  display: none;
+}
+
+// Main styles //
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: $header-bg;
+  padding: 3rem;
+
+  &__heading {
+    width: 5em;
+    line-height: 1em;
+    margin-left: 1rem;
+    align-self: center;
+  }
+
+  &__img {
+    width: 140px;
+  }
+}
+
 .img-container {
-  display: block;
+  // display: block;
+  display: none;
   height: 1000px;
   width: 1000px;
   background-color: var(--color);
@@ -31,8 +75,11 @@ body {
 }
 
 #spinner {
-  display: block;
+  display: none;
+  // display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+
+// Media Queries //
