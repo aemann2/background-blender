@@ -37,21 +37,6 @@ h1 {
           align-items: center;
 }
 
-.img {
-  display: block;
-  width: 800px;
-  height: 800px;
-}
-
-.img__container {
-  width: 100%;
-  height: 100%;
-  background-color: var(--color);
-  background-blend-mode: var(--blend-mode);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,14 +61,30 @@ h1 {
   width: 140px;
 }
 
-.img-container {
-  display: none;
-  height: 1000px;
-  width: 1000px;
+.img {
+  margin: 3rem 3rem 0 -3rem;
+  display: block;
+  width: 800px;
+  height: 800px;
+}
+
+.img__container {
+  width: 100%;
+  height: 100%;
   background-color: var(--color);
   background-blend-mode: var(--blend-mode);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.selectors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #spinner {

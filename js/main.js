@@ -45,10 +45,10 @@ bwButton.addEventListener('click', () => {
   resetRoot();
 });
 
-colorButton.addEventListener('click', () => {
-  fetchColorPhoto();
-  resetRoot();
-});
+// colorButton.addEventListener('click', () => {
+//   fetchColorPhoto();
+//   resetRoot();
+// });
 
 colorPicker.oninput = () =>
   root.style.setProperty('--color', colorPicker.value);
