@@ -2,7 +2,7 @@ const image = document.querySelector('.img-container');
 const spinner = document.querySelector('#spinner');
 const bwButton = document.querySelector('#new-BW-pic');
 const colorButton = document.querySelector('#new-color-pic');
-const bwUrl = 'https://picsum.photos/800/600?grayscale';
+const bwUrl = 'https://picsum.photos/800?grayscale';
 const colorUrl = 'https://picsum.photos/800/600';
 
 const colorPicker = document.querySelector('#colorpicker');

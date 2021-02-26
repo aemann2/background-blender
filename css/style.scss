@@ -7,17 +7,27 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 .img-container {
-  display: inline-block;
-  height: 600px;
-  width: 800px;
+  display: block;
+  height: 1000px;
+  width: 1000px;
   background-color: var(--color);
   background-blend-mode: var(--blend-mode);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #spinner {
