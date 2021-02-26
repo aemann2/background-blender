@@ -1,5 +1,5 @@
-const image = document.querySelector('.img-container');
-const spinner = document.querySelector('#spinner');
+const image = document.querySelector('.img__container');
+const spinner = document.querySelector('.img__spinner');
 const bwButton = document.querySelector('#new-BW-pic');
 const colorButton = document.querySelector('#new-color-pic');
 const bwUrl = 'https://picsum.photos/800?grayscale';
@@ -8,6 +8,8 @@ const colorUrl = 'https://picsum.photos/800/600';
 const colorPicker = document.querySelector('#colorpicker');
 const root = document.documentElement;
 const blendMode = document.querySelector('#blend-mode');
+
+console.log(spinner);
 
 // function to fetch photos from the endpoint
 const fetchBWPhoto = () => {

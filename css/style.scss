@@ -26,10 +26,6 @@ html {
 
 body {
   min-height: 100vh;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
 }
 
 h1 {
@@ -38,12 +34,28 @@ h1 {
   font-size: 5rem;
 }
 
-div {
-  // REMOVE THIS
-  display: none;
+// Main styles //
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-// Main styles //
+.img {
+  display: block;
+  width: 800px;
+  height: 800px;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+    background-blend-mode: var(--blend-mode);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 .header {
   display: flex;
