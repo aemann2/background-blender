@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Lato:wght@100;300;400&display=swap');
 
 // Variables //
 
 $header-bg: #00308d;
+$btn-bg: #ffcc17;
+$picker-bg: rgb(207, 207, 207);
 $main-font-color: #061940;
 $header-font-color: white;
-$btn-bg: #ffcc17;
 
 :root {
   --color: transparent;
@@ -34,12 +35,29 @@ h1 {
   font-size: 5rem;
 }
 
+label {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+input[type='color'] {
+  background-color: $picker-bg;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  width: 300px;
+}
+
 // Main styles //
 
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Lato', sans-serif;
+  color: $main-font-color;
+  align-items: stretch;
 }
 
 .header {
@@ -79,6 +97,14 @@ h1 {
 .selectors {
   display: flex;
   flex-direction: column;
+  text-align: center;
+
+  &__picker {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 // .img-container {

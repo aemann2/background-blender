@@ -5,7 +5,7 @@ const colorButton = document.querySelector('#new-color-pic');
 const bwUrl = 'https://picsum.photos/800?grayscale';
 const colorUrl = 'https://picsum.photos/800/600';
 
-const colorPicker = document.querySelector('#colorpicker');
+const colorPicker = document.querySelector('#color-picker');
 const root = document.documentElement;
 const blendMode = document.querySelector('#blend-mode');
 

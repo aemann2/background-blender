@@ -21,10 +21,12 @@
       <img class="img__spinner" src="" alt="">
     </div>
     <div class="selectors">
-      <button class="selectors__new-pic" id="new-BW-pic">New Picture</button>
-      <input type="color" class="selectors__picker" id="colorpicker" value="#ff0000" style="width:200px">
+      <div class="selectors__picker">
+        <label for="color-picker">Color:</label>
+        <input type="color" class="selectors__picker__bar" id="color-picker" name="color-picker" value="#ff0000">
+      </div>
       <div class="selectors__blend-mode">
-        <label for="blend-mode">Choose your blend mode</label>
+        <label for="blend-mode">Blend Mode:</label>
         <select name="blend-mode" id="blend-mode">
           <option value="hard-light">Hard-light</option>
           <option value="soft-light">Soft-light</option>
@@ -44,6 +46,7 @@
           <option value="normal">Normal (none)</option>
         </select>
       </div>
+      <button class="selectors__new-pic" id="new-BW-pic">New Photo</button>
     </div>
   </main>
 
