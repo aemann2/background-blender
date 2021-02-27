@@ -170,4 +170,60 @@ button:hover {
     height: 40vh;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .header {
+    padding: 1em 3rem 4rem 3rem;
+  }
+  .header__heading {
+    width: 5em;
+  }
+  .header__img {
+    position: absolute;
+    width: 5em;
+    top: 5rem;
+    left: 4rem;
+  }
+  .header--indent {
+    display: inline-block;
+    text-indent: 1.5em;
+  }
+  main {
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .img {
+    margin: 1rem 0 0 0;
+  }
+  .selectors label[for='color-picker'] {
+    display: none;
+  }
+  .selectors label[for='blend-mode'] {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .selectors__blend-mode {
+    margin-top: 2rem;
+  }
+  .selectors__new-pic {
+    border: none;
+    font-size: 3rem;
+    border-radius: 30px;
+    -webkit-box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.37);
+            box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.37);
+    margin: 3rem 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
