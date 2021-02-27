@@ -54,6 +54,12 @@ select {
   background-position: left;
 }
 
+input:hover,
+select:hover,
+button:hover {
+  cursor: pointer;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,7 +103,6 @@ select {
 
 .img {
   margin: 3rem 3rem 0 -3rem;
-  display: block;
   width: 800px;
   height: 800px;
 }
@@ -109,6 +114,17 @@ select {
   background-blend-mode: var(--blend-mode);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.img__spinner {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
 }
 
 .selectors {
@@ -123,6 +139,9 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .selectors__picker, .selectors__blend-mode {
@@ -142,17 +161,18 @@ select {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
 }
 
 .selectors__picker {
   margin-top: 2rem;
 }
 
-#spinner {
-  display: none;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.selectors__new-pic {
+  background-color: #ffcc17;
+  font-size: 4rem;
+  padding: 0.5rem;
+  border: 5px solid black;
+  margin-bottom: 10rem;
 }
 /*# sourceMappingURL=style.css.map */
