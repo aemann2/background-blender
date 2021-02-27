@@ -49,6 +49,19 @@ input[type='color'] {
   width: 300px;
 }
 
+select {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  text-transform: lowercase;
+  text-indent: 1em;
+  width: 7em;
+  appearance: none;
+  border: 2px solid black;
+  background-image: url('../images/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
 // Main styles //
 
 .main {
@@ -98,12 +111,22 @@ input[type='color'] {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-between;
 
-  &__picker {
-    margin-top: 2rem;
+  &__picker,
+  &__blend-mode {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  &__blend-mode {
+    align-self: center;
+    margin-bottom: 10rem;
+  }
+
+  &__picker {
+    margin-top: 2rem;
   }
 }
 
