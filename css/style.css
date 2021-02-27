@@ -39,6 +39,21 @@ input[type='color'] {
   width: 300px;
 }
 
+select {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  text-transform: lowercase;
+  text-indent: 1em;
+  width: 7em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid black;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,10 +120,12 @@ input[type='color'] {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.selectors__picker {
-  margin-top: 2rem;
+.selectors__picker, .selectors__blend-mode {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,6 +136,17 @@ input[type='color'] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.selectors__blend-mode {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 10rem;
+}
+
+.selectors__picker {
+  margin-top: 2rem;
 }
 
 #spinner {
