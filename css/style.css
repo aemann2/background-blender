@@ -59,6 +59,11 @@ button:hover {
   cursor: pointer;
 }
 
+button:hover {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,6 +161,10 @@ button:hover {
   padding: 0.5rem;
   margin-top: 1rem;
   border: 5px solid black;
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -174,6 +183,10 @@ button:hover {
 @media only screen and (max-width: 900px) {
   h1 {
     font-size: 4rem;
+  }
+  button:hover {
+    -webkit-filter: none;
+            filter: none;
   }
   .header {
     padding: 1em 3rem 4rem 3rem;
