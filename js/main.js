@@ -1,16 +1,18 @@
-const image = document.querySelector('.img__container');
-const spinner = document.querySelector('.img__spinner');
-const bwButton = document.querySelector('#new-BW-pic');
-const bwUrl = 'https://picsum.photos/800?grayscale';
-
-const colorPicker = document.querySelector('#color-picker');
 const root = document.documentElement;
+
+const image = document.querySelector('.img__container');
+const picButton = document.querySelector('#new-pic');
+const colorPicker = document.querySelector('#color-picker');
 const blendMode = document.querySelector('#blend-mode');
 
 // function to fetch photos from the endpoint
-const fetchBWPhoto = () => {
+const fetchPhoto = () => {
+  const url = 'https://picsum.photos/800?grayscale';
+  const spinner = document.querySelector('.img__spinner');
+
   image.style.backgroundImage = `url('./images/spinner.svg')`;
-  fetch(bwUrl)
+
+  fetch(url)
     .then((response) => response.blob())
     .then((data) => {
       const imgURL = URL.createObjectURL(data);
@@ -19,27 +21,19 @@ const fetchBWPhoto = () => {
     });
 };
 
-const fetchColorPhoto = () => {
-  fetch(colorUrl)
-    .then((response) => response.blob())
-    .then((data) => {
-      const imgURL = URL.createObjectURL(data);
-      image.style.backgroundImage = `url('${imgURL}')`;
-    });
-};
+fetchPhoto();
 
-// resets root to transparent
+// resets root variable to transparent
 const resetRoot = () => {
   root.style.setProperty('--color', 'transparent');
 };
 
-fetchBWPhoto();
-
-bwButton.addEventListener('click', () => {
-  fetchBWPhoto();
+picButton.addEventListener('click', () => {
+  fetchPhoto();
   resetRoot();
 });
 
+// sets root values to input selections
 colorPicker.oninput = () =>
   root.style.setProperty('--color', colorPicker.value);
 
