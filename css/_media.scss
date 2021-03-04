@@ -13,6 +13,33 @@
   }
 }
 
+@media only screen and (max-height: 850px) and (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  main {
+    margin-top: 2rem;
+  }
+
+  label {
+    font-size: 4rem;
+  }
+
+  .header {
+    padding: 1rem;
+    &__img {
+      width: 100px;
+    }
+  }
+}
+
+@media only screen and (max-height: 850px) and (max-width: 1200px) {
+  main {
+    margin-top: 2rem;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   h1 {
     font-size: 4rem;

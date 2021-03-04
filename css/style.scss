@@ -116,6 +116,8 @@ button:hover {
     text-align: center;
     justify-content: center;
     align-items: center;
+    // fix for Safari
+    display: none;
   }
 }
 
