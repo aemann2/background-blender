@@ -111,14 +111,6 @@ button:hover {
     background-size: cover;
     background-repeat: no-repeat;
   }
-
-  &__spinner {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    // fix for Safari
-    display: none;
-  }
 }
 
 .selectors {

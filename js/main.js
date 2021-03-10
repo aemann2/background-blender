@@ -8,7 +8,6 @@ const blendMode = document.querySelector('#blend-mode');
 // function to fetch photos from the endpoint
 const fetchPhoto = () => {
   const url = 'https://picsum.photos/800?grayscale';
-  const spinner = document.querySelector('.img__spinner');
 
   image.style.backgroundImage = `url('./images/spinner.svg')`;
 
@@ -17,7 +16,6 @@ const fetchPhoto = () => {
     .then((data) => {
       const imgURL = URL.createObjectURL(data);
       image.style.backgroundImage = `url('${imgURL}')`;
-      spinner.src = '';
     });
 };
 
